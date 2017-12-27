@@ -184,7 +184,7 @@ class FibHeap:
             if parent.parent == None:
                 break
             elif parent.mark == False:
-                parent.mark
+                parent.mark = True # mark parent node
                 break
             else:
                 node = parent
